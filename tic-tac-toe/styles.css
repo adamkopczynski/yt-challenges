@@ -1,0 +1,70 @@
+.board {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: rgb(15, 36, 20);
+    width: 360px;
+    height: 360px;
+    position: relative;
+}
+
+.board:before {
+    content: "";
+    height: 320px;
+    width: 2px;
+    background-color: rgba(192, 198, 204, 0.91);
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    -webkit-box-shadow: 120px 0px 0 0 rgba(192, 198, 204, 0.91);
+    box-shadow: 120px 0px 0 0 rgba(192, 198, 204, 0.91);
+}
+
+.board:after {
+    content: "";
+    height: 2px;
+    width: 320px;
+    background-color: rgba(192, 198, 204, 0.91);
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    -webkit-box-shadow: 0 120px 0 0 rgba(192, 198, 204, 0.91);
+    box-shadow: 0 120px 0 0 rgba(192, 198, 204, 0.91);
+}
+
+.field {
+    font-family: Architects Daughter, cursive;
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+    line-height: 80px;
+    padding: 10px;
+    font-weight: 800;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.box {
+    z-index: 999;
+    height: 400px;
+    width: 400px;
+    border: 2px solid #123;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #d9c556;
+    position: relative;
+    -webkit-box-shadow: inset 0 0 15px #000,
+        0 15px 15px 5px #666;
+    box-shadow: inset 0 0 15px #000,
+        0 15px 15px 5px #666;
+}
